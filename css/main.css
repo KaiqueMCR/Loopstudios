@@ -32,6 +32,10 @@ h3 {
   font-family: "Josefin Sans", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   width: 100%;
   position: absolute;
