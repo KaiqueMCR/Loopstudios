@@ -1,0 +1,23 @@
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+
+  .logo {
+    max-width: 110px;
+    z-index: 999;
+    height: 20px;
+  }
+
+  .mobileMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+}
