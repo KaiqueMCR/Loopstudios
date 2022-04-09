@@ -11,13 +11,13 @@
   background-position: center;
   background-size: cover;
   padding: 1.5rem;
-}
 
-.heading_titleWrapper {
-  color: colors.$White;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  border: 1px solid colors.$White;
-  padding: 1rem;
-  max-width: 250px;
+  &_titleWrapper {
+    color: colors.$White;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: 1px solid colors.$White;
+    padding: 1rem;
+    max-width: 250px;
+  }
 }

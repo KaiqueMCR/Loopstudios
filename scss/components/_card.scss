@@ -1,0 +1,31 @@
+@use "../abstracts/colors.scss";
+
+.card {
+  width: 100%;
+  position: relative;
+
+  &_img {
+    width: 100%;
+  }
+
+  &_title {
+    text-align: left;
+    max-width: 45%;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: colors.$White;
+  }
+
+  &:hover {
+    .card_img {
+      filter: opacity(45%);
+      transition: all ease-in-out 0.2s;
+    }
+
+    .card_title {
+      color: colors.$Black;
+      transition: all ease-in-out 0.2s;
+    }
+  }
+}

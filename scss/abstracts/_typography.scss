@@ -1,0 +1,10 @@
+@use "../abstracts/colors.scss";
+
+$Alata: "Alata", sans-serif;
+$Josefin-sans: "Josefin Sans", sans-serif;
+
+.title {
+  text-transform: uppercase;
+  color: colors.$Black;
+  font-weight: 300;
+}

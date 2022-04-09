@@ -1,4 +1,4 @@
-@use "../base/typography";
+@use "../abstracts/typography";
 @use "../abstracts/colors.scss";
 
 .navbar {
@@ -21,13 +21,13 @@
   gap: 1rem;
   font-family: typography.$Josefin-sans;
 
-  .menu_item {
+  &_item {
     text-transform: uppercase;
     font-size: 1.2rem;
     color: colors.$White;
   }
 
-  .menu_link {
+  &_link {
     color: inherit;
   }
 }

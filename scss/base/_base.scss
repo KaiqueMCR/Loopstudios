@@ -1,11 +1,11 @@
-@use "typography";
-@use "../abstracts/colors.scss";
+@use "../abstracts/typography";
 
 body,
 html {
   width: 100%;
   height: 100vh;
   font-family: typography.$Alata;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -17,6 +17,7 @@ h1,
 h2,
 h3 {
   font-family: typography.$Josefin-sans;
+  font-weight: 300;
 }
 
 a {
