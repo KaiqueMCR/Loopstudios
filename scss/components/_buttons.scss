@@ -1,11 +1,11 @@
 @use "../abstracts/colors";
-@use "../abstracts/typography";
+@use "../abstracts/fonts";
 
 .seeAll_btn {
   padding: 0.75rem 2rem;
   border: 1px solid colors.$Black;
   text-transform: uppercase;
-  font-family: typography.$Josefin-sans;
+  font-family: fonts.$Josefin-sans;
   letter-spacing: 0.2rem;
   font-size: 0.75rem;
   font-weight: bold;

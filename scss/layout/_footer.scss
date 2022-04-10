@@ -1,0 +1,104 @@
+@use "../abstracts/colors";
+
+footer {
+  background-color: colors.$Black;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .logo {
+    max-width: 60%;
+  }
+
+  .copyright {
+    font-size: 12px;
+    color: colors.$Very-Dark-Gray;
+    text-align: center;
+  }
+}
+
+.footer_Wrapperlinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+
+  &_item {
+    font-size: 15px;
+    color: colors.$White;
+    font-weight: 300;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: colors.$White;
+      height: 3px;
+      width: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -10px;
+      transition: all 0.2s ease-in-out;
+      border-radius: 10px;
+    }
+
+    &:hover::after {
+      width: 50%;
+    }
+  }
+
+  &_link {
+    color: inherit;
+    font-size: 12px;
+  }
+}
+
+.footer_Wrappersocials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  gap: 1rem;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 0.75rem;
+  position: relative;
+}
+
+.social_link {
+  color: colors.$White;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: colors.$White;
+    height: 3px;
+    width: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
