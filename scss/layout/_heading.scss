@@ -1,4 +1,5 @@
 @use "../abstracts/colors.scss";
+@use "../abstracts/mixings" as *;
 
 .heading {
   width: 100%;
@@ -19,5 +20,25 @@
     border: 1px solid colors.$White;
     padding: 1rem;
     max-width: 250px;
+
+    @include md {
+      max-width: 400px;
+      font-size: 2rem;
+      margin-bottom: -6rem;
+    }
+
+    @include lg {
+      max-width: 600px;
+      font-size: 3rem;
+    }
+  }
+
+  @include md {
+    padding: 1.5rem 6rem;
+    justify-content: flex-start;
+  }
+
+  @include lg {
+    background-image: url(../images/desktop/image-hero.jpg);
   }
 }

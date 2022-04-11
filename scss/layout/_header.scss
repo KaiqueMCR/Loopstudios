@@ -1,3 +1,5 @@
+@use "../abstracts/mixings" as *;
+
 header {
   width: 100%;
   position: absolute;
@@ -19,5 +21,13 @@ header {
     justify-content: center;
     align-items: center;
     z-index: 999;
+
+    @include md {
+      display: none;
+    }
+  }
+
+  @include md {
+    padding: 2rem 6rem;
   }
 }

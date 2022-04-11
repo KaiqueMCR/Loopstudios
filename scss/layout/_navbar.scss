@@ -1,5 +1,6 @@
 @use "../abstracts/fonts";
 @use "../abstracts/colors.scss";
+@use "../abstracts/mixings" as *;
 
 .navbar {
   width: 100%;
@@ -25,11 +26,27 @@
       text-transform: uppercase;
       font-size: 1.2rem;
       color: colors.$White;
+
+      @include md {
+        text-transform: none;
+      }
     }
 
     &_link {
       color: inherit;
     }
+
+    @include md {
+      flex-direction: row;
+    }
+  }
+
+  @include md {
+    display: block !important;
+    position: static;
+    background: none;
+    height: initial;
+    width: initial;
   }
 }
 
