@@ -19,6 +19,11 @@
   color: black;
   font-weight: 300;
 }
+@media (min-width: 992px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
 
 body,
 html {
@@ -58,13 +63,27 @@ header .logo {
   z-index: 999;
   height: 20px;
 }
+@media (min-width: 768px) {
+  header .logo {
+    max-width: 150px;
+    width: 150px;
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  header .logo {
+    max-width: 180px;
+    width: 180px;
+    height: auto;
+  }
+}
 header .mobileMenu {
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   header .mobileMenu {
     display: none;
   }
@@ -100,7 +119,7 @@ header .mobileMenu {
   font-size: 1.2rem;
   color: white;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .navbar .menu_item {
     text-transform: none;
   }
@@ -108,12 +127,12 @@ header .mobileMenu {
 .navbar .menu_link {
   color: inherit;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .navbar .menu {
     flex-direction: row;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .navbar {
     display: block !important;
     position: static;
@@ -162,17 +181,18 @@ header .mobileMenu {
   padding: 1rem;
   max-width: 250px;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .heading_titleWrapper {
     max-width: 400px;
     font-size: 2rem;
-    margin-bottom: -6rem;
+    margin-bottom: -5rem;
   }
 }
 @media (min-width: 992px) {
   .heading_titleWrapper {
     max-width: 600px;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding: 2rem;
   }
 }
 @media (min-width: 768px) {
@@ -189,15 +209,29 @@ header .mobileMenu {
 
 .about {
   width: 100%;
+  max-width: 1320px;
   padding: 5rem 1.5rem 2.5rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
+  margin: auto;
 }
 .about_img {
   width: 100%;
+  max-width: 400px;
+}
+@media (min-width: 768px) {
+  .about_img {
+    max-width: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .about_img {
+    align-self: flex-start;
+    max-width: 700px;
+  }
 }
 .about_textWrapper {
   text-align: center;
@@ -207,11 +241,46 @@ header .mobileMenu {
   justify-content: center;
   gap: 1rem;
 }
+@media (min-width: 768px) {
+  .about_textWrapper {
+    max-width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .about_textWrapper {
+    background-color: white;
+    position: absolute;
+    right: 6rem;
+    bottom: 2.5rem;
+    max-width: 45%;
+    text-align: left;
+    padding: 4rem 0 0 4rem;
+  }
+  .about_textWrapper .title {
+    align-self: flex-start;
+  }
+}
 .about_description {
   width: 90%;
   font-size: 12px;
   color: #8c8c8c;
   text-align: center;
+}
+@media (min-width: 992px) {
+  .about_description {
+    width: 100%;
+    align-self: flex-start;
+    text-align: left;
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .about {
+    position: relative;
+    flex-direction: row;
+    padding: 5rem 6rem 2.5rem 6rem;
+    justify-content: space-between;
+  }
 }
 
 .creations {
@@ -221,12 +290,41 @@ header .mobileMenu {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
+}
+@media (min-width: 992px) {
+  .creations .card {
+    width: auto;
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .creations .card .title {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .creations .card_img {
+    width: initial;
+  }
 }
 .creations_titleWrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 4rem;
+}
+@media (min-width: 992px) {
+  .creations_titleWrapper {
+    width: 100%;
+    max-width: 1120px;
+    padding: 0 9rem;
+  }
+}
+@media (min-width: 1310px) {
+  .creations_titleWrapper {
+    padding: 0;
+  }
 }
 .creations_cardsWrapper {
   display: flex;
@@ -234,6 +332,28 @@ header .mobileMenu {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+@media (min-width: 992px) {
+  .creations_cardsWrapper {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (min-width: 1310px) {
+  .creations_cardsWrapper {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media (min-width: 992px) {
+  .creations .seeAll_btn {
+    display: none;
+  }
+  .creations .seeAll_btn.hidden {
+    display: block;
+  }
 }
 
 footer {

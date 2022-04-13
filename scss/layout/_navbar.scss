@@ -27,7 +27,7 @@
       font-size: 1.2rem;
       color: colors.$White;
 
-      @include md {
+      @include sm {
         text-transform: none;
       }
     }
@@ -36,12 +36,12 @@
       color: inherit;
     }
 
-    @include md {
+    @include sm {
       flex-direction: row;
     }
   }
 
-  @include md {
+  @include sm {
     display: block !important;
     position: static;
     background: none;

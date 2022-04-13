@@ -1,3 +1,5 @@
+@use "../abstracts/mixings" as *;
+
 .creations {
   width: 100%;
   padding: 2.5rem 1.5rem 5rem;
@@ -5,12 +7,42 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
+
+  .card {
+    @include lg {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .card .title {
+    @include lg {
+      font-size: 2rem;
+    }
+  }
+
+  .card_img {
+    @include lg {
+      width: initial;
+    }
+  }
 
   &_titleWrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 4rem;
+
+    @include lg {
+      width: 100%;
+      max-width: 1120px;
+      padding: 0 9rem;
+    }
+
+    @include rwd(1310px) {
+      padding: 0;
+    }
   }
 
   &_cardsWrapper {
@@ -19,5 +51,26 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+
+    @include lg {
+      display: grid;
+      grid-template-rows: auto auto auto;
+      grid-template-columns: auto auto auto;
+    }
+
+    @include rwd(1310px) {
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+
+  @include lg {
+    .seeAll_btn {
+      display: none;
+    }
+    .seeAll_btn.hidden {
+      display: block;
+    }
   }
 }

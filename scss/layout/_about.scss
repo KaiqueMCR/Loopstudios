@@ -1,16 +1,29 @@
-@use "../abstracts/colors.scss";
+@use "../abstracts/colors";
+@use "../abstracts/mixings" as *;
 
 .about {
   width: 100%;
+  max-width: 1320px;
   padding: 5rem 1.5rem 2.5rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
+  margin: auto;
 
   &_img {
     width: 100%;
+    max-width: 400px;
+
+    @include md {
+      max-width: 500px;
+    }
+
+    @include lg {
+      align-self: flex-start;
+      max-width: 700px;
+    }
   }
 
   &_textWrapper {
@@ -20,6 +33,24 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+
+    @include md {
+      max-width: 60%;
+    }
+
+    @include lg {
+      & .title {
+        align-self: flex-start;
+      }
+
+      background-color: colors.$White;
+      position: absolute;
+      right: 6rem;
+      bottom: 2.5rem;
+      max-width: 45%;
+      text-align: left;
+      padding: 4rem 0 0 4rem;
+    }
   }
 
   &_description {
@@ -27,5 +58,19 @@
     font-size: 12px;
     color: colors.$Dark-Gray;
     text-align: center;
+
+    @include lg {
+      width: 100%;
+      align-self: flex-start;
+      text-align: left;
+      font-size: 15px;
+    }
+  }
+
+  @include lg {
+    position: relative;
+    flex-direction: row;
+    padding: 5rem 6rem 2.5rem 6rem;
+    justify-content: space-between;
   }
 }

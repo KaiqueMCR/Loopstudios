@@ -1,4 +1,5 @@
 @use "../abstracts/colors.scss";
+@use "../abstracts/mixings" as *;
 
 $Alata: "Alata", sans-serif;
 $Josefin-sans: "Josefin Sans", sans-serif;
@@ -7,4 +8,8 @@ $Josefin-sans: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   color: colors.$Black;
   font-weight: 300;
+
+  @include lg {
+    font-size: 2.5rem;
+  }
 }
