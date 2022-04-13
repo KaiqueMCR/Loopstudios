@@ -9,25 +9,6 @@
   align-items: center;
   gap: 2.5rem;
 
-  .card {
-    @include lg {
-      width: auto;
-      height: auto;
-    }
-  }
-
-  .card .title {
-    @include lg {
-      font-size: 2rem;
-    }
-  }
-
-  .card_img {
-    @include lg {
-      width: initial;
-    }
-  }
-
   &_titleWrapper {
     display: flex;
     align-items: center;
