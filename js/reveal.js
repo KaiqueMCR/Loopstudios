@@ -1,11 +1,6 @@
-ScrollReveal().reveal('.logo', {
+ScrollReveal().reveal('header .logo', {
 	scale: 0
 })
-ScrollReveal().reveal('.menu_item', {
-	scale: 0,
-	interval: 100
-})
-
 ScrollReveal().reveal('.heading_titleWrapper', {
 	scale: 0
 })
@@ -15,7 +10,7 @@ ScrollReveal().reveal('.about_img', {
 	easing: 'ease-out'
 })
 ScrollReveal().reveal('.about_textWrapper', {
-	distance: '100px',
+	distance: '90px',
 	origin: 'right',
 	easing: 'ease-out'
 })
@@ -32,17 +27,4 @@ ScrollReveal().reveal('.seeAll_btn', {
 ScrollReveal().reveal('.card', {
 	scale: 0,
 	interval: 100
-})
-
-ScrollReveal().reveal('.social', {
-	scale: 0,
-	interval: 100
-})
-
-ScrollReveal().reveal('.footer_menu_item', {
-	scale: 0,
-	interval: 100
-})
-ScrollReveal().reveal('.copyright', {
-	scale: 0
 })
