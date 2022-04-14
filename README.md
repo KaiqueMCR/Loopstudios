@@ -45,8 +45,6 @@ Users should be able to:
 - Jquery
 - Scrollreveal lib
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 Surely there must be a better way to create a responsive hamburger menu, but this was a solution that I found works reasonably well.
