@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/solution-loopstudios-landing-page-kaquemcr-HJ58T-8Ec)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/solution-loopstudios-landing-page-kaquemcr-HJ58T-8Ec)
+- Live Site URL: [Github pages](https://your-live-site-url.com)
 
 ### Built with
 
