@@ -50,13 +50,7 @@ Users should be able to:
 Surely there must be a better way to create a responsive hamburger menu, but this was a solution that I found works reasonably well.
 
 ```js
-$('.mobileMenu').click(() => {
-	$('.navbar').animate({ width: 'toggle' }, 'fast')
-	$('.close').toggleClass('hidden')
-	$('.open').toggleClass('hidden')
-})
-
-$('.navbar').click(() => {
+$('.mobileMenu, .navbar').click(() => {
 	$('.navbar').animate({ width: 'toggle' }, 'fast')
 	$('.close').toggleClass('hidden')
 	$('.open').toggleClass('hidden')
