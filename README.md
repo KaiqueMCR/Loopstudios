@@ -1,5 +1,7 @@
 # Loopstudios - landing page
 
+<br>
+
 <div align="center">
   <img src="./images/logo.svg">
 </div>
