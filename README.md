@@ -79,6 +79,6 @@ I will always be looking for better optimized and performing alternatives for my
 
 Having knowledge about the box model, CSS grid layout and Flexbox were crucial in this challenge
 
-## 🪪 License
+## 📄 License
 
 [MIT](./LICENSE.md)
