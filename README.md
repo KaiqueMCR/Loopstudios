@@ -3,7 +3,9 @@
 <br>
 
 <div align="center">
-  <img src="./images/logo.svg">
+
+[<img src="./images/logo.svg">](https://kaiquemcr.github.io/Loopstudios/)
+  
 </div>
 
 <br>
@@ -23,7 +25,12 @@
 
 **Note**: The Frontend Mentor platform screenshot is not working very well because of the scrollreveal implementation. Many elements of the page might not be showing in this screenshot
 
+<div align="center">
+
 ![preview](./design/desktop-preview.jpg)
+<p align="center">Click on the image above to see in production 👆</p>
+
+</div>
 
 ### 🏆 The challenge
 
