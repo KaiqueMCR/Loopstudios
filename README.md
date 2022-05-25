@@ -27,7 +27,7 @@
 
 <div align="center">
 
-![preview](./design/desktop-preview.jpg)
+[<img src="./design/desktop-preview.jpg" />](https://kaiquemcr.github.io/Loopstudios/)
 <p align="center">Click on the image above to see in production 👆</p>
 
 </div>
