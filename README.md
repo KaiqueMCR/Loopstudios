@@ -41,8 +41,7 @@ Users should be able to:
 
 ### 🔗 Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/solution-loopstudios-landing-page-kaquemcr-HJ58T-8Ec)
-- Live Site URL: [Github pages](https://your-live-site-url.com)
+- Live Site URL: [Github pages](https://kaiquemcr.github.io/Loopstudios/)
 
 ### 👾 Built with
 
